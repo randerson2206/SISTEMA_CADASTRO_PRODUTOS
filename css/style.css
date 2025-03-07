@@ -1,0 +1,138 @@
+/* Estilos Globais */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 20px;
+}
+
+
+
+h1, h2 {
+    text-align: center;
+    color: #333;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+input, textarea, button {
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+button {
+    background-color: #28a745;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #218838;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+th, td {
+    border: 1px solid #ddd;
+    padding: 10px;
+    text-align: center;
+}
+
+th {
+    background-color: #007bff;
+    color: white;
+}
+
+.actions {
+    display: flex;
+    justify-content: center; /* Centraliza os botões horizontalmente */
+    gap: 10px;
+    align-items: center;  /* Alinha os botões verticalmente */
+}
+
+.actions a, .actions button {
+    padding: 5px 10px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 14px;
+}
+
+.edit {
+    background-color: #ffc107;
+    color: #fff;
+}
+
+.delete {
+    background-color: #dc3545;
+    color: #fff;
+}
+
+/* Media Queries para Responsividade */
+
+/* Para telas pequenas (como celulares) */
+@media (max-width: 768px) {
+    .container {
+        padding: 15px;
+    }
+
+    form {
+        gap: 8px;
+    }
+
+    input, textarea, button {
+        font-size: 14px;
+        padding: 8px;
+    }
+
+    table th, table td {
+        font-size: 14px;
+        padding: 8px;
+    }
+
+    .actions a, .actions button {
+        font-size: 12px;
+        padding: 5px 8px;
+    }
+}
+
+/* Para telas muito pequenas (como celulares verticais) */
+@media (max-width: 480px) {
+    .container {
+        padding: 10px;
+    }
+
+    table {
+        font-size: 12px;
+    }
+
+    table th, table td {
+        padding: 5px;
+    }
+
+    .actions {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .actions a, .actions button {
+        width: 100%;
+        text-align: center;
+        margin-bottom: 5px;
+    }
+
+    form input, form textarea, form button {
+        font-size: 14px;
+        padding: 8px;
+    }
+}
